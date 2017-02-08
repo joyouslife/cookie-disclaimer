@@ -1,0 +1,44 @@
+body {
+    background-color: #f1f1f1;
+}
+
+#wpfooter {
+    position: relative;
+}
+
+#settings {
+    padding: 20px;
+    margin-left: -10px;
+}
+
+#settings a.nav-item:active,
+#settings a.nav-item:focus
+{
+    outline:0px;
+    -webkit-appearance:none;
+    box-shadow: none;
+}
+
+#settings .radius-reset,
+#settings .radius-reset-all * {
+    border-radius: 0;
+}
+
+#settings h3.title {
+    margin-top: 0;
+}
+
+.nav.nav-toyga {
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.panel.panel-toyga {
+    margin-top: 10px;
+    border: 1px solid #dddddd;
+}
+
+.panel.panel-toyga .panel-heading {
+    background: #23282d;
+    color: #fff;
+}
