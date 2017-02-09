@@ -5,9 +5,17 @@
         <a class="btn-close">&#x2715;</a>
     </div>
     <div class="content-container">
-        <?php echo wpautop($options['general_text']); ?>
+        <p class="first-sentence">
+            <?php echo $options['general_cookie_statement']; ?>
+        </p>
+        <p class="second-sentence">
+            <?php echo $options['general_site_ownership']; ?>
+        </p>
+
     </div>
     <div class="button-container">
-        <button><?php echo stripslashes($options['general_button_text']); ?></button>
+        <?php $text = stripslashes($options['general_accept_button']); ?>
+
+        <button title="<?php echo $text; ?>"><?php echo$text; ?></button>
     </div>
 </div>

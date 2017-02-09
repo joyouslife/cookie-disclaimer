@@ -30,6 +30,16 @@ class JsService extends AbstractService
             $this->app->wp->getJsUrl('backend/settings.js'),
             array('jquery')
         );
+
+        $data = array(
+            'ajaxUrl' => $this->app->wp->getAdminUrl('admin-ajax.php')
+        );
+
+        $this->app->wp->registerJsDataObject(
+            $this->app->getHandler('settings'),
+            'CookieDisclaimer',
+            $data
+        );
     } // end addSettingsPageScripts
 
     public function addFrontendScripts()

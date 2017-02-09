@@ -50,6 +50,11 @@ class WpFacade
         wp_enqueue_script($handle, $src, $deps, $ver, $inFooter);
     } // end addJs
 
+    public function registerJsDataObject($handle, $name, $data = array())
+    {
+        wp_localize_script($handle, $name, $data);
+    } // end registerJsDataObject
+
     public function getPluginUrl($fileName = '')
     {
         return $this->getUrlByPath($this->_pluginMainFile, $fileName);
@@ -93,16 +98,37 @@ class WpFacade
         return $page;
     } // end addMenuAction
 
+    public function addSubMenuPage(
+        $parentSlug, $pageTitle, $menuTitle, $capability,
+        $menuSlug, $function = ''
+    )
+    {
+        $page = add_submenu_page(
+            $parentSlug,
+            $pageTitle,
+            $menuTitle,
+            $capability,
+            $menuSlug,
+            $function
+        );
+
+        return $page;
+    } // end addSubMenuPage
+
     public function getOption($optionName, $defaultValue = '')
     {
         return  get_option($optionName, $defaultValue);
     } // end get_option
 
-
     public function updateOption($optionName, $newValue, $autoload = true)
     {
         return update_option($optionName, $newValue, $autoload);
     } // end updateOption
+
+    public function deleteOption($optionName)
+    {
+        return delete_option($optionName);
+    } // end deleteOption
 
     public function getSiteUrl($path = '', $scheme = null)
     {
@@ -140,4 +166,31 @@ class WpFacade
     {
         load_plugin_textdomain($domain, false, $languagesFolderPath);
     } // end loadPluginTextdomain
+
+    public function getAdminUrl($path, $scheme = 'admin')
+    {
+        $url = admin_url($path, $scheme);
+        return $this->prepareUrl($url);
+    } // end getAdminUrl
+
+    public function prepareUrl($url)
+    {
+        $data = parse_url($url);
+
+        if (array_key_exists('scheme', $data)) {
+            $url = str_replace($data['scheme'].':', '', $url);
+        }
+
+        return $url;
+    } // end prepareUrl
+
+    public function sendJsonSuccess($data = null)
+    {
+        wp_send_json_success($data);
+    } // end sendJsonSuccess
+
+    public function sendJsonError($data = null)
+    {
+        wp_send_json_error($data);
+    } // end sendJsonError
 }

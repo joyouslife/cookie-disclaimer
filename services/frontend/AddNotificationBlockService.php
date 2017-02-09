@@ -7,9 +7,9 @@ class AddNotificationBlockService extends AbstractService
 {
     protected function onInit()
     {
-        $coockieService = $this->app->service('coockie');
+        $cookieService = $this->app->service('cookie');
 
-        if ($coockieService->hasValue()) {
+        if ($cookieService->hasValue()) {
             return false;
         }
 
@@ -25,7 +25,8 @@ class AddNotificationBlockService extends AbstractService
 
     public function onAddNotificationAction()
     {
-        $options = $this->app->service('options')->get();
+        $optionIdent = $this->app->service('CountryOptions')->getIdentForCurrentUser();
+        $options = $this->app->service('options')->getSettings($optionIdent);
 
         echo $this->app->render(
             'frontend/notification.php',

@@ -7,13 +7,21 @@ class RouterService extends AbstractService
 {
     public function start()
     {
-        $this->app->service('options')->initDefault();
-
+        $this->_onUninstallInit();
         $this->_onInstallInit();
         $this->_onCommonInit();
         $this->_onBackendInit();
         $this->_onFrontendInit();
     } // end onInit
+
+    private function _onUninstallInit()
+    {
+        if (!defined('WP_UNINSTALL_PLUGIN')) {
+            return false;
+        }
+
+        $this->app->service('uninstall');
+    } // end _onUninstallInit
 
     private function _onInstallInit()
     {
@@ -29,6 +37,7 @@ class RouterService extends AbstractService
     private function _onCommonInit()
     {
         $this->app->service('Internationalization');
+        $this->app->service('Ajax');
     } // end _onCommonInit
 
     private function _onFrontendInit()

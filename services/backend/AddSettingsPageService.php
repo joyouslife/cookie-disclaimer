@@ -9,11 +9,16 @@ class AddSettingsPageService extends AbstractService
     {
         $this->app->wp->addAction(
             'admin_menu',
-            array(&$this, 'onAddPageAction')
+            array(&$this, 'onAddGeneralPageAction')
+        );
+
+        $this->app->wp->addAction(
+            'admin_menu',
+            array(&$this, 'onAddManageCountriesPageAction')
         );
     } // end onInit
 
-    public function onAddPageAction()
+    public function onAddGeneralPageAction()
     {
         $service = $this->app->service('SettingsPage', 'backend');
 
@@ -38,10 +43,33 @@ class AddSettingsPageService extends AbstractService
             'admin_print_scripts-'.$page,
             array($service, 'addSettingsPageScripts')
         );
-    } // end onAddPageAction
+    } // end onAddGeneralPageAction
 
-    public function addSettingsPageScripts()
+    public function onAddManageCountriesPageAction()
     {
+        $service = $this->app->service('CountriesPage', 'backend');
 
-    } // end addSettingsPageScripts
+        $page = $this->app->wp->addSubMenuPage(
+            'cookie-disclaimer',
+            __("Countries", $this->app->textDomain),
+            __("Countries", $this->app->textDomain),
+            'manage_options',
+            'cookie-disclaimer-countries',
+            array($service, 'start')
+        );
+
+        $service = $this->app->service('css');
+
+        $this->app->wp->addAction(
+            'admin_print_styles-'.$page,
+            array($service, 'addSettingsPageStyles')
+        );
+
+        $service = $this->app->service('js');
+
+        $this->app->wp->addAction(
+            'admin_print_scripts-'.$page,
+            array($service, 'addSettingsPageScripts')
+        );
+    } // end onAddManageCountriesPageAction
 }

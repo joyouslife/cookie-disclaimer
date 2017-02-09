@@ -14,15 +14,16 @@ class AddCssService extends AbstractService
     {
         $service = $this->app->service('css');
 
+        $this->app->wp->addAction(
+            'wp_print_styles',
+            array($service, 'addNotificationDesktopStyles')
+        );
+
+
         if ($this->app->wp->isMobile()) {
             $this->app->wp->addAction(
                 'wp_print_styles',
                 array($service, 'addNotificationMobileStyles')
-            );
-        } else {
-            $this->app->wp->addAction(
-                'wp_print_styles',
-                array($service, 'addNotificationDesktopStyles')
             );
         }
 

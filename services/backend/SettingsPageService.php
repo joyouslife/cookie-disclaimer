@@ -7,7 +7,9 @@ class SettingsPageService extends AbstractService
 {
     public function start()
     {
-        $result = $this->app->service('SaveSettingsPage', 'backend')->save();
-        echo $this->app->service('DisplaySettingsPage', 'backend')->render($result);
+        $this->app->service('SaveSettingsPage', 'backend');
+        $this->app->service('AddCountry', 'backend');
+        $this->app->service('SetActiveCountry', 'backend');
+        echo $this->app->service('DisplaySettingsPage', 'backend')->render();
     } // end onAddPageAction
 }

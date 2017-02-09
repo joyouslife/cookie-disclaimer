@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: festi-woocommerce-cart\n"
-"POT-Creation-Date: 2017-02-08 15:37+0200\n"
-"PO-Revision-Date: 2017-02-08 15:37+0200\n"
+"POT-Creation-Date: 2017-02-09 03:51+0200\n"
+"PO-Revision-Date: 2017-02-09 03:51+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en_EN\n"
@@ -16,57 +16,1084 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SearchPath-0: .\n"
 
+#: services/CountryOptionsService.php:26
+msgid "All"
+msgstr ""
+
 #: services/SettingsService.php:11
 msgid "General"
 msgstr ""
 
-#: services/SettingsService.php:12
-msgid "Mobile"
-msgstr ""
-
-#: services/SettingsService.php:13
-msgid "Countries"
+#: services/SettingsService.php:20
+msgid "First Sentence"
 msgstr ""
 
 #: services/SettingsService.php:22
-msgid "Text"
+msgid "We use cookies to give you the best online experience"
 msgstr ""
 
-#: services/SettingsService.php:27
-msgid "Button Caption"
+#: services/SettingsService.php:26
+msgid "Displayed always as the first sentence in the banner"
 msgstr ""
 
-#: services/SettingsService.php:29
+#: services/SettingsService.php:32
+msgid "Second Sentence"
+msgstr ""
+
+#: services/SettingsService.php:35
+msgid "Displayed as the second sentence in the banner"
+msgstr ""
+
+#: services/SettingsService.php:41
+msgid "Accept Button"
+msgstr ""
+
+#: services/SettingsService.php:43
 msgid "Accept and Close"
 msgstr ""
 
-#: services/SettingsService.php:35 services/SettingsService.php:61
-msgid "Border Color"
+#: services/SettingsService.php:47
+msgid "Text on the button always"
 msgstr ""
 
-#: services/SettingsService.php:40 services/SettingsService.php:66
-msgid "Button Color"
+#: services/SettingsService.php:53
+msgid "Base Color"
 msgstr ""
 
-#: services/SettingsService.php:45 services/SettingsService.php:71
-msgid "Button Text Color"
+#: services/SettingsService.php:56
+msgid "Used to define base color for border and button"
 msgstr ""
 
-#: services/SettingsService.php:50 services/SettingsService.php:76
-msgid "Close Button Color"
+#: services/backend/AddCountryService.php:41
+msgid "Country added successfully"
 msgstr ""
 
-#: services/backend/AddSettingsPageService.php:21
-#: services/backend/AddSettingsPageService.php:22
+#: services/backend/AddSettingsPageService.php:26
+#: services/backend/AddSettingsPageService.php:27
 msgid "Сookie Disclaimer"
+msgstr ""
+
+#: services/backend/AddSettingsPageService.php:54
+#: services/backend/AddSettingsPageService.php:55
+msgid "Countries"
+msgstr ""
+
+#: services/backend/CountriesService.php:11
+msgid "Afghanistan"
+msgstr ""
+
+#: services/backend/CountriesService.php:12
+msgid "Aland Islands"
+msgstr ""
+
+#: services/backend/CountriesService.php:13
+msgid "Albania"
+msgstr ""
+
+#: services/backend/CountriesService.php:14
+msgid "Algeria"
+msgstr ""
+
+#: services/backend/CountriesService.php:15
+msgid "American Samoa"
+msgstr ""
+
+#: services/backend/CountriesService.php:16
+msgid "Andorra"
+msgstr ""
+
+#: services/backend/CountriesService.php:17
+msgid "Angola"
+msgstr ""
+
+#: services/backend/CountriesService.php:18
+msgid "Anguilla"
+msgstr ""
+
+#: services/backend/CountriesService.php:19
+msgid "Antarctica"
+msgstr ""
+
+#: services/backend/CountriesService.php:20
+msgid "Antigua and Barbuda"
+msgstr ""
+
+#: services/backend/CountriesService.php:21
+msgid "Argentina"
+msgstr ""
+
+#: services/backend/CountriesService.php:22
+msgid "Armenia"
+msgstr ""
+
+#: services/backend/CountriesService.php:23
+msgid "Aruba"
+msgstr ""
+
+#: services/backend/CountriesService.php:24
+msgid "Australia"
+msgstr ""
+
+#: services/backend/CountriesService.php:25
+msgid "Austria"
+msgstr ""
+
+#: services/backend/CountriesService.php:26
+msgid "Azerbaijan"
+msgstr ""
+
+#: services/backend/CountriesService.php:27
+msgid "Bahamas"
+msgstr ""
+
+#: services/backend/CountriesService.php:28
+msgid "Bahrain"
+msgstr ""
+
+#: services/backend/CountriesService.php:29
+msgid "Bangladesh"
+msgstr ""
+
+#: services/backend/CountriesService.php:30
+msgid "Barbados"
+msgstr ""
+
+#: services/backend/CountriesService.php:31
+msgid "Belarus"
+msgstr ""
+
+#: services/backend/CountriesService.php:32
+msgid "Belgium"
+msgstr ""
+
+#: services/backend/CountriesService.php:33
+msgid "Belize"
+msgstr ""
+
+#: services/backend/CountriesService.php:34
+msgid "Benin"
+msgstr ""
+
+#: services/backend/CountriesService.php:35
+msgid "Bermuda"
+msgstr ""
+
+#: services/backend/CountriesService.php:36
+msgid "Bhutan"
+msgstr ""
+
+#: services/backend/CountriesService.php:37
+msgid "Bolivia"
+msgstr ""
+
+#: services/backend/CountriesService.php:38
+msgid "Bosnia and Herzegovina"
+msgstr ""
+
+#: services/backend/CountriesService.php:39
+msgid "Botswana"
+msgstr ""
+
+#: services/backend/CountriesService.php:40
+msgid "Bouvet Island"
+msgstr ""
+
+#: services/backend/CountriesService.php:41
+msgid "Brazil"
+msgstr ""
+
+#: services/backend/CountriesService.php:42
+msgid "British Indian Ocean Territory"
+msgstr ""
+
+#: services/backend/CountriesService.php:43
+msgid "Brunei Darussalam"
+msgstr ""
+
+#: services/backend/CountriesService.php:44
+msgid "Bulgaria"
+msgstr ""
+
+#: services/backend/CountriesService.php:45
+msgid "Burkina Faso"
+msgstr ""
+
+#: services/backend/CountriesService.php:46
+msgid "Burundi"
+msgstr ""
+
+#: services/backend/CountriesService.php:47
+msgid "Cambodia"
+msgstr ""
+
+#: services/backend/CountriesService.php:48
+msgid "Cameroon"
+msgstr ""
+
+#: services/backend/CountriesService.php:49
+msgid "Canada"
+msgstr ""
+
+#: services/backend/CountriesService.php:50
+msgid "Cape Verde"
+msgstr ""
+
+#: services/backend/CountriesService.php:51
+msgid "Cayman Islands"
+msgstr ""
+
+#: services/backend/CountriesService.php:52
+msgid "Central African Republic"
+msgstr ""
+
+#: services/backend/CountriesService.php:53
+msgid "Chad"
+msgstr ""
+
+#: services/backend/CountriesService.php:54
+msgid "Chile"
+msgstr ""
+
+#: services/backend/CountriesService.php:55
+msgid "China"
+msgstr ""
+
+#: services/backend/CountriesService.php:56
+msgid "Christmas Island"
+msgstr ""
+
+#: services/backend/CountriesService.php:57
+msgid "Cocos (Keeling) Islands"
+msgstr ""
+
+#: services/backend/CountriesService.php:58
+msgid "Colombia"
+msgstr ""
+
+#: services/backend/CountriesService.php:59
+msgid "Comoros"
+msgstr ""
+
+#: services/backend/CountriesService.php:60
+msgid "Congo"
+msgstr ""
+
+#: services/backend/CountriesService.php:61
+msgid "Congo, The Democratic Republic of The"
+msgstr ""
+
+#: services/backend/CountriesService.php:62
+msgid "Cook Islands"
+msgstr ""
+
+#: services/backend/CountriesService.php:63
+msgid "Costa Rica"
+msgstr ""
+
+#: services/backend/CountriesService.php:64
+msgid "Cote D'ivoire"
+msgstr ""
+
+#: services/backend/CountriesService.php:65
+msgid "Croatia"
+msgstr ""
+
+#: services/backend/CountriesService.php:66
+msgid "Cuba"
+msgstr ""
+
+#: services/backend/CountriesService.php:67
+msgid "Cyprus"
+msgstr ""
+
+#: services/backend/CountriesService.php:68
+msgid "Czech Republic"
+msgstr ""
+
+#: services/backend/CountriesService.php:69
+msgid "Denmark"
+msgstr ""
+
+#: services/backend/CountriesService.php:70
+msgid "Djibouti"
+msgstr ""
+
+#: services/backend/CountriesService.php:71
+msgid "Dominica"
+msgstr ""
+
+#: services/backend/CountriesService.php:72
+msgid "Dominican Republic"
+msgstr ""
+
+#: services/backend/CountriesService.php:73
+msgid "Ecuador"
+msgstr ""
+
+#: services/backend/CountriesService.php:74
+msgid "Egypt"
+msgstr ""
+
+#: services/backend/CountriesService.php:75
+msgid "El Salvador"
+msgstr ""
+
+#: services/backend/CountriesService.php:76
+msgid "Equatorial Guinea"
+msgstr ""
+
+#: services/backend/CountriesService.php:77
+msgid "Eritrea"
+msgstr ""
+
+#: services/backend/CountriesService.php:78
+msgid "Estonia"
+msgstr ""
+
+#: services/backend/CountriesService.php:79
+msgid "Ethiopia"
+msgstr ""
+
+#: services/backend/CountriesService.php:80
+msgid "Falkland Islands (Malvinas)"
+msgstr ""
+
+#: services/backend/CountriesService.php:81
+msgid "Faroe Islands"
+msgstr ""
+
+#: services/backend/CountriesService.php:82
+msgid "Fiji"
+msgstr ""
+
+#: services/backend/CountriesService.php:83
+msgid "Finland"
+msgstr ""
+
+#: services/backend/CountriesService.php:84
+msgid "France"
+msgstr ""
+
+#: services/backend/CountriesService.php:85
+msgid "French Guiana"
+msgstr ""
+
+#: services/backend/CountriesService.php:86
+msgid "French Polynesia"
+msgstr ""
+
+#: services/backend/CountriesService.php:87
+msgid "French Southern Territories"
+msgstr ""
+
+#: services/backend/CountriesService.php:88
+msgid "Gabon"
+msgstr ""
+
+#: services/backend/CountriesService.php:89
+msgid "Gambia"
+msgstr ""
+
+#: services/backend/CountriesService.php:90
+msgid "Georgia"
+msgstr ""
+
+#: services/backend/CountriesService.php:91
+msgid "Germany"
+msgstr ""
+
+#: services/backend/CountriesService.php:92
+msgid "Ghana"
+msgstr ""
+
+#: services/backend/CountriesService.php:93
+msgid "Gibraltar"
+msgstr ""
+
+#: services/backend/CountriesService.php:94
+msgid "Greece"
+msgstr ""
+
+#: services/backend/CountriesService.php:95
+msgid "Greenland"
+msgstr ""
+
+#: services/backend/CountriesService.php:96
+msgid "Grenada"
+msgstr ""
+
+#: services/backend/CountriesService.php:97
+msgid "Guadeloupe"
+msgstr ""
+
+#: services/backend/CountriesService.php:98
+msgid "Guam"
+msgstr ""
+
+#: services/backend/CountriesService.php:99
+msgid "Guatemala"
+msgstr ""
+
+#: services/backend/CountriesService.php:100
+msgid "Guernsey"
+msgstr ""
+
+#: services/backend/CountriesService.php:101
+msgid "Guinea"
+msgstr ""
+
+#: services/backend/CountriesService.php:102
+msgid "Guinea-bissau"
+msgstr ""
+
+#: services/backend/CountriesService.php:103
+msgid "Guyana"
+msgstr ""
+
+#: services/backend/CountriesService.php:104
+msgid "Haiti"
+msgstr ""
+
+#: services/backend/CountriesService.php:105
+msgid "Heard Island and Mcdonald Islands"
+msgstr ""
+
+#: services/backend/CountriesService.php:106
+msgid "Holy See (Vatican City State)"
+msgstr ""
+
+#: services/backend/CountriesService.php:107
+msgid "Honduras"
+msgstr ""
+
+#: services/backend/CountriesService.php:108
+msgid "Hong Kong"
+msgstr ""
+
+#: services/backend/CountriesService.php:109
+msgid "Hungary"
+msgstr ""
+
+#: services/backend/CountriesService.php:110
+msgid "Iceland"
+msgstr ""
+
+#: services/backend/CountriesService.php:111
+msgid "India"
+msgstr ""
+
+#: services/backend/CountriesService.php:112
+msgid "Indonesia"
+msgstr ""
+
+#: services/backend/CountriesService.php:113
+msgid "Iran, Islamic Republic of"
+msgstr ""
+
+#: services/backend/CountriesService.php:114
+msgid "Iraq"
+msgstr ""
+
+#: services/backend/CountriesService.php:115
+msgid "Ireland"
+msgstr ""
+
+#: services/backend/CountriesService.php:116
+msgid "Isle of Man"
+msgstr ""
+
+#: services/backend/CountriesService.php:117
+msgid "Israel"
+msgstr ""
+
+#: services/backend/CountriesService.php:118
+msgid "Italy"
+msgstr ""
+
+#: services/backend/CountriesService.php:119
+msgid "Jamaica"
+msgstr ""
+
+#: services/backend/CountriesService.php:120
+msgid "Japan"
+msgstr ""
+
+#: services/backend/CountriesService.php:121
+msgid "Jersey"
+msgstr ""
+
+#: services/backend/CountriesService.php:122
+msgid "Jordan"
+msgstr ""
+
+#: services/backend/CountriesService.php:123
+msgid "Kazakhstan"
+msgstr ""
+
+#: services/backend/CountriesService.php:124
+msgid "Kenya"
+msgstr ""
+
+#: services/backend/CountriesService.php:125
+msgid "Kiribati"
+msgstr ""
+
+#: services/backend/CountriesService.php:126
+msgid "Korea, Democratic People's Republic of"
+msgstr ""
+
+#: services/backend/CountriesService.php:127
+msgid "Korea, Republic of"
+msgstr ""
+
+#: services/backend/CountriesService.php:128
+msgid "Kuwait"
+msgstr ""
+
+#: services/backend/CountriesService.php:129
+msgid "Kyrgyzstan"
+msgstr ""
+
+#: services/backend/CountriesService.php:130
+msgid "Lao People's Democratic Republic"
+msgstr ""
+
+#: services/backend/CountriesService.php:131
+msgid "Latvia"
+msgstr ""
+
+#: services/backend/CountriesService.php:132
+msgid "Lebanon"
+msgstr ""
+
+#: services/backend/CountriesService.php:133
+msgid "Lesotho"
+msgstr ""
+
+#: services/backend/CountriesService.php:134
+msgid "Liberia"
+msgstr ""
+
+#: services/backend/CountriesService.php:135
+msgid "Libyan Arab Jamahiriya"
+msgstr ""
+
+#: services/backend/CountriesService.php:136
+msgid "Liechtenstein"
+msgstr ""
+
+#: services/backend/CountriesService.php:137
+msgid "Lithuania"
+msgstr ""
+
+#: services/backend/CountriesService.php:138
+msgid "Luxembourg"
+msgstr ""
+
+#: services/backend/CountriesService.php:139
+msgid "Macao"
+msgstr ""
+
+#: services/backend/CountriesService.php:140
+msgid "Macedonia, The Former Yugoslav Republic of"
+msgstr ""
+
+#: services/backend/CountriesService.php:141
+msgid "Madagascar"
+msgstr ""
+
+#: services/backend/CountriesService.php:142
+msgid "Malawi"
+msgstr ""
+
+#: services/backend/CountriesService.php:143
+msgid "Malaysia"
+msgstr ""
+
+#: services/backend/CountriesService.php:144
+msgid "Maldives"
+msgstr ""
+
+#: services/backend/CountriesService.php:145
+msgid "Mali"
+msgstr ""
+
+#: services/backend/CountriesService.php:146
+msgid "Malta"
+msgstr ""
+
+#: services/backend/CountriesService.php:147
+msgid "Marshall Islands"
+msgstr ""
+
+#: services/backend/CountriesService.php:148
+msgid "Martinique"
+msgstr ""
+
+#: services/backend/CountriesService.php:149
+msgid "Mauritania"
+msgstr ""
+
+#: services/backend/CountriesService.php:150
+msgid "Mauritius"
+msgstr ""
+
+#: services/backend/CountriesService.php:151
+msgid "Mayotte"
+msgstr ""
+
+#: services/backend/CountriesService.php:152
+msgid "Mexico"
+msgstr ""
+
+#: services/backend/CountriesService.php:153
+msgid "Micronesia, Federated States of"
+msgstr ""
+
+#: services/backend/CountriesService.php:154
+msgid "Moldova, Republic of"
+msgstr ""
+
+#: services/backend/CountriesService.php:155
+msgid "Monaco"
+msgstr ""
+
+#: services/backend/CountriesService.php:156
+msgid "Mongolia"
+msgstr ""
+
+#: services/backend/CountriesService.php:157
+msgid "Montenegro"
+msgstr ""
+
+#: services/backend/CountriesService.php:158
+msgid "Montserrat"
+msgstr ""
+
+#: services/backend/CountriesService.php:159
+msgid "Morocco"
+msgstr ""
+
+#: services/backend/CountriesService.php:160
+msgid "Mozambique"
+msgstr ""
+
+#: services/backend/CountriesService.php:161
+msgid "Myanmar"
+msgstr ""
+
+#: services/backend/CountriesService.php:162
+msgid "Namibia"
+msgstr ""
+
+#: services/backend/CountriesService.php:163
+msgid "Nauru"
+msgstr ""
+
+#: services/backend/CountriesService.php:164
+msgid "Nepal"
+msgstr ""
+
+#: services/backend/CountriesService.php:165
+msgid "Netherlands"
+msgstr ""
+
+#: services/backend/CountriesService.php:166
+msgid "Netherlands Antilles"
+msgstr ""
+
+#: services/backend/CountriesService.php:167
+msgid "New Caledonia"
+msgstr ""
+
+#: services/backend/CountriesService.php:168
+msgid "New Zealand"
+msgstr ""
+
+#: services/backend/CountriesService.php:169
+msgid "Nicaragua"
+msgstr ""
+
+#: services/backend/CountriesService.php:170
+msgid "Niger"
+msgstr ""
+
+#: services/backend/CountriesService.php:171
+msgid "Nigeria"
+msgstr ""
+
+#: services/backend/CountriesService.php:172
+msgid "Niue"
+msgstr ""
+
+#: services/backend/CountriesService.php:173
+msgid "Norfolk Island"
+msgstr ""
+
+#: services/backend/CountriesService.php:174
+msgid "Northern Mariana Islands"
+msgstr ""
+
+#: services/backend/CountriesService.php:175
+msgid "Norway"
+msgstr ""
+
+#: services/backend/CountriesService.php:176
+msgid "Oman"
+msgstr ""
+
+#: services/backend/CountriesService.php:177
+msgid "Pakistan"
+msgstr ""
+
+#: services/backend/CountriesService.php:178
+msgid "Palau"
+msgstr ""
+
+#: services/backend/CountriesService.php:179
+msgid "Palestinian Territory, Occupied"
+msgstr ""
+
+#: services/backend/CountriesService.php:180
+msgid "Panama"
+msgstr ""
+
+#: services/backend/CountriesService.php:181
+msgid "Papua New Guinea"
+msgstr ""
+
+#: services/backend/CountriesService.php:182
+msgid "Paraguay"
+msgstr ""
+
+#: services/backend/CountriesService.php:183
+msgid "Peru"
+msgstr ""
+
+#: services/backend/CountriesService.php:184
+msgid "Philippines"
+msgstr ""
+
+#: services/backend/CountriesService.php:185
+msgid "Pitcairn"
+msgstr ""
+
+#: services/backend/CountriesService.php:186
+msgid "Poland"
+msgstr ""
+
+#: services/backend/CountriesService.php:187
+msgid "Portugal"
+msgstr ""
+
+#: services/backend/CountriesService.php:188
+msgid "Puerto Rico"
+msgstr ""
+
+#: services/backend/CountriesService.php:189
+msgid "Qatar"
+msgstr ""
+
+#: services/backend/CountriesService.php:190
+msgid "Reunion"
+msgstr ""
+
+#: services/backend/CountriesService.php:191
+msgid "Romania"
+msgstr ""
+
+#: services/backend/CountriesService.php:192
+msgid "Russian Federation"
+msgstr ""
+
+#: services/backend/CountriesService.php:193
+msgid "Rwanda"
+msgstr ""
+
+#: services/backend/CountriesService.php:194
+msgid "Saint Helena"
+msgstr ""
+
+#: services/backend/CountriesService.php:195
+msgid "Saint Kitts and Nevis"
+msgstr ""
+
+#: services/backend/CountriesService.php:196
+msgid "Saint Lucia"
+msgstr ""
+
+#: services/backend/CountriesService.php:197
+msgid "Saint Pierre and Miquelon"
+msgstr ""
+
+#: services/backend/CountriesService.php:198
+msgid "Saint Vincent and The Grenadines"
+msgstr ""
+
+#: services/backend/CountriesService.php:199
+msgid "Samoa"
+msgstr ""
+
+#: services/backend/CountriesService.php:200
+msgid "San Marino"
+msgstr ""
+
+#: services/backend/CountriesService.php:201
+msgid "Sao Tome and Principe"
+msgstr ""
+
+#: services/backend/CountriesService.php:202
+msgid "Saudi Arabia"
+msgstr ""
+
+#: services/backend/CountriesService.php:203
+msgid "Senegal"
+msgstr ""
+
+#: services/backend/CountriesService.php:204
+msgid "Serbia"
+msgstr ""
+
+#: services/backend/CountriesService.php:205
+msgid "Seychelles"
+msgstr ""
+
+#: services/backend/CountriesService.php:206
+msgid "Sierra Leone"
+msgstr ""
+
+#: services/backend/CountriesService.php:207
+msgid "Singapore"
+msgstr ""
+
+#: services/backend/CountriesService.php:208
+msgid "Slovakia"
+msgstr ""
+
+#: services/backend/CountriesService.php:209
+msgid "Slovenia"
+msgstr ""
+
+#: services/backend/CountriesService.php:210
+msgid "Solomon Islands"
+msgstr ""
+
+#: services/backend/CountriesService.php:211
+msgid "Somalia"
+msgstr ""
+
+#: services/backend/CountriesService.php:212
+msgid "South Africa"
+msgstr ""
+
+#: services/backend/CountriesService.php:213
+msgid "South Georgia and The South Sandwich Islands"
+msgstr ""
+
+#: services/backend/CountriesService.php:214
+msgid "Spain"
+msgstr ""
+
+#: services/backend/CountriesService.php:215
+msgid "Sri Lanka"
+msgstr ""
+
+#: services/backend/CountriesService.php:216
+msgid "Sudan"
+msgstr ""
+
+#: services/backend/CountriesService.php:217
+msgid "Suriname"
+msgstr ""
+
+#: services/backend/CountriesService.php:218
+msgid "Svalbard and Jan Mayen"
+msgstr ""
+
+#: services/backend/CountriesService.php:219
+msgid "Swaziland"
+msgstr ""
+
+#: services/backend/CountriesService.php:220
+msgid "Sweden"
+msgstr ""
+
+#: services/backend/CountriesService.php:221
+msgid "Switzerland"
+msgstr ""
+
+#: services/backend/CountriesService.php:222
+msgid "Syrian Arab Republic"
+msgstr ""
+
+#: services/backend/CountriesService.php:223
+msgid "Taiwan, Province of China"
+msgstr ""
+
+#: services/backend/CountriesService.php:224
+msgid "Tajikistan"
+msgstr ""
+
+#: services/backend/CountriesService.php:225
+msgid "Tanzania, United Republic of"
+msgstr ""
+
+#: services/backend/CountriesService.php:226
+msgid "Thailand"
+msgstr ""
+
+#: services/backend/CountriesService.php:227
+msgid "Timor-leste"
+msgstr ""
+
+#: services/backend/CountriesService.php:228
+msgid "Togo"
+msgstr ""
+
+#: services/backend/CountriesService.php:229
+msgid "Tokelau"
+msgstr ""
+
+#: services/backend/CountriesService.php:230
+msgid "Tonga"
+msgstr ""
+
+#: services/backend/CountriesService.php:231
+msgid "Trinidad and Tobago"
+msgstr ""
+
+#: services/backend/CountriesService.php:232
+msgid "Tunisia"
+msgstr ""
+
+#: services/backend/CountriesService.php:233
+msgid "Turkey"
+msgstr ""
+
+#: services/backend/CountriesService.php:234
+msgid "Turkmenistan"
+msgstr ""
+
+#: services/backend/CountriesService.php:235
+msgid "Turks and Caicos Islands"
+msgstr ""
+
+#: services/backend/CountriesService.php:236
+msgid "Tuvalu"
+msgstr ""
+
+#: services/backend/CountriesService.php:237
+msgid "Uganda"
+msgstr ""
+
+#: services/backend/CountriesService.php:238
+msgid "Ukraine"
+msgstr ""
+
+#: services/backend/CountriesService.php:239
+msgid "United Arab Emirates"
+msgstr ""
+
+#: services/backend/CountriesService.php:240
+msgid "United Kingdom"
+msgstr ""
+
+#: services/backend/CountriesService.php:241
+msgid "United States"
+msgstr ""
+
+#: services/backend/CountriesService.php:242
+msgid "United States Minor Outlying Islands"
+msgstr ""
+
+#: services/backend/CountriesService.php:243
+msgid "Uruguay"
+msgstr ""
+
+#: services/backend/CountriesService.php:244
+msgid "Uzbekistan"
+msgstr ""
+
+#: services/backend/CountriesService.php:245
+msgid "Vanuatu"
+msgstr ""
+
+#: services/backend/CountriesService.php:246
+msgid "Venezuela"
+msgstr ""
+
+#: services/backend/CountriesService.php:247
+msgid "Viet Nam"
+msgstr ""
+
+#: services/backend/CountriesService.php:248
+msgid "Virgin Islands, British"
+msgstr ""
+
+#: services/backend/CountriesService.php:249
+msgid "Virgin Islands, U.S."
+msgstr ""
+
+#: services/backend/CountriesService.php:250
+msgid "Wallis and Futuna"
+msgstr ""
+
+#: services/backend/CountriesService.php:251
+msgid "Western Sahara"
+msgstr ""
+
+#: services/backend/CountriesService.php:252
+msgid "Yemen"
+msgstr ""
+
+#: services/backend/CountriesService.php:253
+msgid "Zambia"
+msgstr ""
+
+#: services/backend/CountriesService.php:254
+msgid "Zimbabwe"
 msgstr ""
 
 #: services/backend/SaveSettingsPageService.php:29
 msgid "Settings saved successfully"
 msgstr ""
 
-#: views/backend/settings.php:10
+#: services/backend/SetActiveCountryService.php:29
+#, php-format
+msgid "Country changed to %s successfully"
+msgstr ""
+
+#: views/backend/countries.php:12
+msgid "Active Countries"
+msgstr ""
+
+#: views/backend/countries.php:37
+msgid "Delete"
+msgstr ""
+
+#: views/backend/countries.php:47
+msgid "No results"
+msgstr ""
+
+#: views/backend/country_options_forms.php:6
+msgid "Select Country"
+msgstr ""
+
+#: views/backend/country_options_forms.php:27
+msgid "Add Country"
+msgstr ""
+
+#: views/backend/country_options_forms.php:43
+msgid "Add"
+msgstr ""
+
+#: views/backend/settings.php:12
 msgid "Settings"
+msgstr ""
+
+#: views/defaults/site_ownership.php:3
+#, php-format
+msgid "By using our website, you agree to our %sprivacy policy%s"
 msgstr ""
 
 #~ msgid "WooCommerce not active or not installed."

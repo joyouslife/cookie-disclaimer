@@ -12,6 +12,7 @@ class App {
     public $pluginPath;
     public $textDomain;
     public $wp;
+    public $result;
 
     public function __construct($config, $pluginMainFile)
     {

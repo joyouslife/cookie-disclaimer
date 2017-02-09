@@ -5,16 +5,16 @@ use toyga\core\abstracts\AbstractService;
 
 class SaveSettingsPageService extends AbstractService
 {
-    public function save()
+    protected function onInit()
     {
         if (!$this->_hasSettingsInRequest()) {
             return false;
         }
+        $activeOption = $this->app->service('CountryOptions')->getActive();
+        $this->app->service('options')->updateSettings($activeOption, $_POST);
 
-        $this->app->service('options')->update($_POST);
-
-        return $this->_getSuccessResult();
-    } // end onAddPageAction
+        $this->app->result = $this->_getSuccessResult();
+    } // end onInit
 
     private function _hasSettingsInRequest()
     {

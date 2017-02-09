@@ -13,6 +13,6 @@
     </label>
     <div class="col-md-4">
         <?php $value = str_replace('\"', '&quot;', $value); ?>
-        <input  id="textinput" name="<?php echo $ident; ?>" type="text"  value="<?php echo $value; ?>" placeholder="placeholder" class="form-control  radius-reset input-md">
+        <textarea rows="3" class="form-control radius-reset" id="<?php echo $ident; ?>" name="<?php echo $ident; ?>"><?php echo $value; ?></textarea>
     </div>
 </div>

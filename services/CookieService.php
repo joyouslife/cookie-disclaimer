@@ -3,7 +3,7 @@ namespace toyga\services;
 
 use toyga\core\abstracts\AbstractService;
 
-class CoockieService extends AbstractService
+class CookieService extends AbstractService
 {
     private $_value;
     private $_name = 'cookie_disclaimer';

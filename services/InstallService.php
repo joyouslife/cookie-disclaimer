@@ -7,7 +7,8 @@ class InstallService extends AbstractService
 {
     public function start()
     {
-        $options = $this->app->service('options')->get();
+        $activeOption = $this->app->service('CountryOptions')->getActive();
+        $options = $this->app->service('options')->getSettings($activeOption);
 
         if ($options) {
             return false;

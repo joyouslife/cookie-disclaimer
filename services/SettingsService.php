@@ -9,89 +9,62 @@ class SettingsService extends AbstractService
     {
         return array(
             'general'   => __('General', $this->app->textDomain),
-            'mobile'    => __('Mobile', $this->app->textDomain),
-            'countries' => __('Countries', $this->app->textDomain),
         );
     } // end getSectors
 
     public function getGeneralFields()
     {
         return array(
-            'text'   => array(
-                'type' =>  'wpeditor',
-                'label' => __('Text', $this->app->textDomain),
-                'value' => $this->app->render('defaults/text.php'),
+            'cookie_statement'   => array(
+                'type' =>  'textarea',
+                'label' => __('First Sentence', $this->app->textDomain),
+                'value' => __(
+                    'We use cookies to give you the best online experience',
+                    $this->app->textDomain
+                ),
+                'tooltip' => __(
+                    'Displayed always as the first sentence in the banner',
+                    $this->app->textDomain
+                ),
             ),
-            'button_text'   => array(
+            'site_ownership'   => array(
+                'type' =>  'textarea',
+                'label' => __('Second Sentence', $this->app->textDomain),
+                'value' => $this->app->render('defaults/site_ownership.php'),
+                'tooltip' => __(
+                    'Displayed as the second sentence in the banner',
+                    $this->app->textDomain
+                ),
+            ),
+            'accept_button'   => array(
                 'type' =>  'text',
-                'label' => __('Button Caption', $this->app->textDomain),
+                'label' => __('Accept Button', $this->app->textDomain),
                 'value' => __(
                     'Accept and Close',
                     $this->app->textDomain
                 ),
+                'tooltip' => __(
+                    'Text on the button always',
+                    $this->app->textDomain
+                ),
             ),
-            'border_color'   => array(
+            'base_color'   => array(
                 'type' =>  'colorpicker',
-                'label' => __('Border Color', $this->app->textDomain),
-                'value' => '#f7c50b',
+                'label' => __('Base Color', $this->app->textDomain),
+                'value' => '#f7c413',
+                'tooltip' => __(
+                    'Used to define base color for border and button',
+                    $this->app->textDomain
+                ),
             ),
-            'button_color'   => array(
-                'type' =>  'colorpicker',
-                'label' => __('Button Color', $this->app->textDomain),
-                'value' => '#f7c50b',
-            ),
-            'button_text_color'   => array(
-                'type' =>  'colorpicker',
-                'label' => __('Button Text Color', $this->app->textDomain),
-                'value' => '#65635d',
-            ),
-            'close_button_color'   => array(
-                'type' =>  'colorpicker',
-                'label' => __('Close Button Color', $this->app->textDomain),
-                'value' => '#a1a1a1',
-            )
         );
     } // end getGeneralFields
-
-    public function getMobileFields()
-    {
-        return array(
-            'border_color'   => array(
-                'type' =>  'colorpicker',
-                'label' => __('Border Color', $this->app->textDomain),
-                'value' => '#a12626',
-            ),
-            'button_color'   => array(
-                'type' =>  'colorpicker',
-                'label' => __('Button Color', $this->app->textDomain),
-                'value' => '#b83a3a',
-            ),
-            'button_text_color'   => array(
-                'type' =>  'colorpicker',
-                'label' => __('Button Text Color', $this->app->textDomain),
-                'value' => '#cccccc',
-            ),
-            'close_button_color'   => array(
-                'type' =>  'colorpicker',
-                'label' => __('Close Button Color', $this->app->textDomain),
-                'value' => '#8a3636',
-            )
-        );
-    } // end getMobileFields
-
-    public function getCountriesFields()
-    {
-        return array(
-            'information'   => array(
-                'type' =>  'countries_information',
-            )
-        );
-    } // end getCountriesFields
 
     public function getSettings()
     {
         $settings = $this->getSectors();
-        $options = $this->app->service('options')->get();
+        $activeOption = $this->app->service('CountryOptions')->getActive();
+        $options = $this->app->service('options')->getSettings($activeOption);
 
         foreach ($settings as $key => &$sector) {
             $sector = array(

@@ -5,15 +5,16 @@
         init: function() {
             var self = General;
 
-            self.initCloseNotificationEvent()
-            self.initAcceptEvent()
+            self.initAcceptEvent();
         },
 
-        initCloseNotificationEvent : function () {
+        initAcceptEvent : function () {
             var self = General;
-            $(self.mainSelector + ' .btn-close').on(
+            $(self.mainSelector + ' .btn-close').on('click', self.setCookie);
+
+            $(self.mainSelector + ' .button-container button').on(
                 'click',
-                self.removeContainer
+                self.setCookie
             );
         },
 
@@ -22,14 +23,6 @@
 
             $(self.mainSelector).remove();
             return false;
-        },
-
-        initAcceptEvent : function () {
-            var self = General;
-            $(self.mainSelector + ' .button-container button').on(
-                'click',
-                self.setCookie
-            );
         },
 
         setCookie: function () {

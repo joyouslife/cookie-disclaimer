@@ -4,11 +4,17 @@
 ?>
 <div id="settings">
     <h3 class="title">Сookie Disclaimer</h3>
-    <form method="post" class="form-horizontal">
+
         <div class="panel panel-toyga radius-reset">
             <div class="panel-heading radius-reset">
-                <h3 class="panel-title"><?php _e('Settings'); ?></h3>
+                <h3 class="panel-title">
+                    <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+                    <?php _e('Settings'); ?>
+                </h3>
             </div>
+
+            <?php echo $this->app->service('CountryOptions')->renderForms(); ?>
+            <form method="post" class="form-horizontal">
 
             <!-- Nav tabs -->
             <ul class="nav nav-tabs nav-toyga" role="tablist">
@@ -26,11 +32,13 @@
                     $isFirst = false;
                 }
 ?>
+
             </ul>
+
             <div class="panel-body">
                 <?php
-                if ($saveResult) {
-                    echo $this->app->render('backend/message.php', $saveResult);
+                if ($this->app->result) {
+                    echo $this->app->render('backend/message.php', $this->app->result);
                 }
 
                 ?>
@@ -77,9 +85,9 @@
                 </div>
 
             </div>
-
-        </div>
     </form>
+        </div>
+
 </div>
 
 

@@ -21,7 +21,9 @@ class GenerateCssService extends AbstractService
         }
 
         $type = $_GET['cookie_disclaimer'];
-        $options = $this->app->service('options')->get();
+
+        $optionIdent = $this->app->service('CountryOptions')->getIdentForCurrentUser();
+        $options = $this->app->service('options')->getSettings($optionIdent);
 
         $this->_displayCssContent($type, $options);
     } // end onPrintCssAction
@@ -29,10 +31,6 @@ class GenerateCssService extends AbstractService
     private function _displayCssContent($type, $options)
     {
         $vars = array('options' => $options);
-        $content = $this->app->render(
-            'frontend/css/desktop.php',
-            $vars
-        );
 
         switch ($type) {
             case 'default':

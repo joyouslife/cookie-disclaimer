@@ -28,6 +28,20 @@ body {
     margin-top: 0;
 }
 
+#settings .panel-title .glyphicon {
+    vertical-align: bottom;
+}
+
+#settings label .glyphicon {
+    color: #0073aa;
+}
+
+#settings .settings-country {
+    min-width: 400px;
+    padding-top: 5px;
+}
+
+
 .nav.nav-toyga {
     padding-left: 10px;
     padding-top: 10px;
@@ -41,4 +55,14 @@ body {
 .panel.panel-toyga .panel-heading {
     background: #23282d;
     color: #fff;
+}
+
+#country-options-forms {
+    margin: 0;
+    background: #f1f1f1;
+    padding: 5px 10px;
+}
+
+#country-options-forms select {
+    height: 34px;
 }

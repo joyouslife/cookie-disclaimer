@@ -10,6 +10,6 @@
 }
 
 #notification .button-container > button {
-    text-align: left;
-    margin-left: 0;
+    text-align: right;
+    margin-right: 0;
 }
